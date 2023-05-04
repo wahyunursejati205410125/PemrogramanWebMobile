@@ -1,0 +1,80 @@
+:root {
+  --primary: rgba(19, 35, 49, 0.8);
+  --bg: white;
+}
+.wafe {
+  padding: 5rem 7% 1.4rem;
+  color: var(--primary);
+  position: relative;
+  align-items: center;
+  height: 100%;
+  z-index: -1;
+  grid-template-columns: 2, 1fr;
+}
+.wafe h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  text-align: center;
+}
+.wafe .row {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  background-color: rgba(31, 47, 61, 0.185);
+}
+.wafe .row img {
+  padding: 3rem 3rem;
+  height: 350px;
+  /* padding-top: 3rem; */
+}
+.wafe .row form {
+  text-align: center;
+  /* border: 1px solid var(--primary); */
+}
+.wafe .row form i {
+  padding-right: 1rem;
+}
+.wafe .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin: 2rem 1rem;
+  color: var(--primary);
+  padding-left: 2rem;
+}
+
+.wafe .row form .input-group input {
+  background: none;
+  padding: 0.3rem;
+}
+
+.wafe .row form .btn {
+  /* margin-top: 3rem; */
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #4148583b;
+}
+
+/* Media */
+/* tablet */
+@media (max-width: 757px) {
+  html {
+    font-size: 62.5%;
+  }
+  .wafe .row img {
+    height: 250px;
+  }
+  .wafe .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
